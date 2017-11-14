@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import { Animated } from "react-animated-css";
-import ReactPlayer from "react-player";
 import { Container, Header, Button, Icon } from "semantic-ui-react";
-import tennis from "./assets/tennis.jpg";
+import hoos from "./assets/hoos.png";
 
-var tenn = {
-  fontSize: "20px"
-};
-
-export default class Tennis extends React.Component {
+export default class HoosActive extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -23,7 +18,7 @@ export default class Tennis extends React.Component {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <img src={tennis} alt={"logo"} width={650} height={375} />
+              <img src={hoos} alt={"logo"} width={650} height={375} />
             </Animated>
           </div>
           <div className="description-activities">
@@ -32,19 +27,23 @@ export default class Tennis extends React.Component {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <h2 id="activity-title"> Tennis </h2>
+              <h2 id="activity-title"> HoosActive </h2>
               <Container text>
-                <p id="desc" style={tenn}>
-                  State Finalist, Regional Champion
+                <p id="desc">
+                  - Web Application that allows UVA students to manage and
+                  schedule pick up games with each other
                   <br />
                   <br />
-                  Top 300 Recruit
+                  - Current Demo/Prototype Version in Web
                   <br />
                   <br />
-                  Captain for Briar Woods Tennis
+                  - Currently in iOS development to make it easier for students
+                  to use it on the fly
                   <br />
                   <br />
-                  Director of Tennis and Coach
+                  <a href="https://hoosactive.firebaseapp.com/">
+                    Web Demo (Still Work in Progress)
+                  </a>
                 </p>
               </Container>
             </Animated>

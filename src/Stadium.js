@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import { Animated } from "react-animated-css";
-import ReactPlayer from "react-player";
 import { Container, Header, Button, Icon } from "semantic-ui-react";
-import tennis from "./assets/tennis.jpg";
+import stadium from "./assets/stadium.jpg";
 
-var tenn = {
-  fontSize: "20px"
-};
-
-export default class Tennis extends React.Component {
+export default class Stadium extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -23,7 +18,7 @@ export default class Tennis extends React.Component {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <img src={tennis} alt={"logo"} width={650} height={375} />
+              <img src={stadium} alt={"logo"} width={650} height={375} />
             </Animated>
           </div>
           <div className="description-activities">
@@ -32,19 +27,19 @@ export default class Tennis extends React.Component {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <h2 id="activity-title"> Tennis </h2>
+              <h2 id="activity-title"> StadiumTour </h2>
               <Container text>
-                <p id="desc" style={tenn}>
-                  State Finalist, Regional Champion
+                <p id="desc">
+                  - WebVR Application that can allow people to see a 360 degree
+                  view of how it is to be in sports stadiums
                   <br />
                   <br />
-                  Top 300 Recruit
+                  - Plan to use ReactVR and A-Frame
                   <br />
                   <br />
-                  Captain for Briar Woods Tennis
+                  - In the long run, we hope to help people make decisions
+                  before buying tickets to sports events
                   <br />
-                  <br />
-                  Director of Tennis and Coach
                 </p>
               </Container>
             </Animated>

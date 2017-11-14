@@ -85,7 +85,7 @@
 .category-title {
   font-family: "Patua One", cursive;
   font-size: 35px;
-  color: #add8e6;
+  color: #cfdfe4;
   margin: auto;
 }
 
@@ -106,6 +106,12 @@
   width: 400px;
 }
 
+#sing-desc {
+  margin-top: 5%;
+  width: 400px;
+  font-size: 25px;
+}
+
 .toggle-forward {
   margin-left: 85%;
 }
@@ -114,9 +120,17 @@
   margin-left: 5%;
 }
 
+.toggle-hoos {
+  margin: auto;
+}
+
+.toggle-stadium {
+  margin: auto;
+}
+
 .media {
-  margin-top: 5%;
-  margin-left: 2%;
+  margin-top: 3%;
+  margin-left: 5%;
 }
 
 #activity-title {
@@ -134,4 +148,23 @@
   flex-direction: row;
   margin: auto;
   width: 80%;
+}
+
+.toggle-projects {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 60%;
+}
+
+#about-desc {
+  margin: auto;
+}
+
+#space {
+  width: 20%;
+}
+
+#future {
+  color: orange;
 }
