@@ -50,7 +50,7 @@ export default class About extends React.Component {
                     hope to eventually be a big part of the technological
                     movement. Rather than building remote communication for
                     humans, the task at hand is communication between "things"
-                    and I woud love to commit my career towards this outlook.
+                    and I would love to commit my career towards this outlook.
                   </p>
                 </Container>
               </div>

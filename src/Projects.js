@@ -20,13 +20,18 @@ export default class Projects extends React.Component {
     }
   }
 
-  showStadium(e) {
+  showAlexa(e) {
     if (this.state.hoos) {
       this.setState({
         hoos: false
       });
     }
   }
+
+  showAlexa(e){
+      console.log("Clicked For Alexa")
+  }
+
   render() {
     var current = "";
     if (this.state.hoos) {
@@ -59,9 +64,19 @@ export default class Projects extends React.Component {
               icon
               inverted
               color="orange"
-              onClick={e => this.showStadium(e)}
+              onClick={e => this.showAlexa(e)}
             >
-              StadiumTour
+              MotivateMe
+            </Button>
+          </div>
+          <div className="toggle-contra">
+            <Button
+              icon
+              inverted
+              color="orange"
+              onClick={e => this.showContra(e)}
+            >
+              ContraPortal
             </Button>
           </div>
         </div>

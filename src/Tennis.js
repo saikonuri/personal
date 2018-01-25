@@ -41,10 +41,10 @@ export default class Tennis extends React.Component {
                   Top 300 Recruit
                   <br />
                   <br />
-                  Captain for Briar Woods Tennis
+                  Captain of Briar Woods Tennis
                   <br />
                   <br />
-                  Director of Tennis and Coach
+                  US Army Reserve National Scholar Athlete Award Nominee
                 </p>
               </Container>
             </Animated>
