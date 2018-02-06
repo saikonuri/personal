@@ -10,10 +10,14 @@ export default class Social extends React.Component {
   render() {
     return (
       <div className="social">
-        <SocialIcon url={githubUrl} color="pink" />
-        <SocialIcon url={linkedInUrl} color="cyan" />
-        <SocialIcon url={facebookUrl} color="powderblue" />
+        <SocialIcon url={githubUrl} color="pink" style={style} />
+        <SocialIcon url={linkedInUrl} color="cyan" style={style} />
+        <SocialIcon url={facebookUrl} color="powderblue" style={style} />
       </div>
     );
   }
+}
+
+var style = {
+  marginRight: '1%'
 }

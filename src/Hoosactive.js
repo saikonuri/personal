@@ -18,7 +18,7 @@ export default class HoosActive extends React.Component {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <img src={hoos} alt={"logo"} width={650} height={375} />
+              <img src={hoos} alt={"logo"} width={450} height={215} />
             </Animated>
           </div>
           <div className="description-activities">
@@ -30,19 +30,21 @@ export default class HoosActive extends React.Component {
               <h2 id="activity-title"> HoosActive </h2>
               <Container text>
                 <p id="desc">
-                  - Web Application that allows UVA students to manage and
+                  • Mobile Application that allows UVA students to manage and
                   schedule pick up games with each other
                   <br />
                   <br />
-                  - Current Demo/Prototype Version in Web
+                  • Current Demo/Prototype Version in Web (On the left)
                   <br />
                   <br />
-                  - Currently in iOS development to make it easier for students
+                  • Currently in React Native development to make it easier for students
                   to use it on the fly
                   <br />
                   <br />
-                  <a href="https://hoosactive.firebaseapp.com/">
-                    Web Demo (Still Work in Progress)
+                  • Mobile version is much more feature rich and is in process of being completed soon and deployed. Below is link to the project repository!
+                  <br />
+                  <a href="https://github.com/saikonuri/hoos-native">
+                    Project Repo
                   </a>
                 </p>
               </Container>

@@ -9,18 +9,20 @@ import scrollToElement from "scroll-to-element";
 import About from "./About.js";
 import Projects from "./Projects.js";
 import Activities from "./Activities.js";
+import Resume from "./Resume.js"
 import * as firebase from "firebase";
-import {config} from "./keys.js";
+import { config } from "./keys.js";
 
 firebase.initializeApp(config);
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       about: false,
-      projects:false,
-      activities: false
+      projects: false,
+      activities: false,
+      resume: false
     }
   }
 
@@ -28,32 +30,46 @@ class App extends Component {
     //document.getElementById("about").scrollIntoView({ behavior: "smooth" });
     scrollToElement(".category");
     this.setState({
-      about:true,
-      projects:false,
-      activities: false
+      about: true,
+      projects: false,
+      activities: false,
+      resume: false
     })
   }
 
   showProjectsPage() {
     scrollToElement(".category");
     this.setState({
-      projects:true,
-      about:false,
-      activities:false
+      projects: true,
+      about: false,
+      activities: false,
+      resume: false
     })
   }
 
   showActivitiesPage() {
     scrollToElement(".category");
     this.setState({
-      activities:true,
-      about:false,
-      projects:false
+      activities: true,
+      about: false,
+      projects: false,
+      resume: false
     })
   }
+
+  showResume() {
+    scrollToElement(".category");
+    this.setState({
+      activities: false,
+      about: false,
+      projects: false,
+      resume: true
+    })
+  }
+
   render() {
     var category;
-    if(this.state.about == true){
+    if (this.state.about == true) {
       category = (
         <About />)
     }
@@ -66,12 +82,18 @@ class App extends Component {
       category = (
         <Activities />)
     }
+    else if (this.state.resume == true) {
+      category = (
+        <Resume />
+      )
+    }
     return (
       <div className="App">
         <div className="pic-name">
           <div className="name-position">
             <h1 id="name">Sai Konuri</h1>
             <h2 id="position">Software Developer</h2>
+            <Social />
           </div>
           <img className="profile-pic" src={prof} />
         </div>
@@ -86,6 +108,21 @@ class App extends Component {
               }}
             >
               <Button.Content visible>About Me</Button.Content>
+              <Button.Content hidden>
+                <Icon name="user" color="black" />
+              </Button.Content>
+            </Button>
+          </div>
+          <div className="button">
+            <Button
+              animated
+              inverted
+              color="teal"
+              onClick={() => {
+                this.showResume();
+              }}
+            >
+              <Button.Content visible>Resume</Button.Content>
               <Button.Content hidden>
                 <Icon name="user" color="black" />
               </Button.Content>
@@ -115,7 +152,7 @@ class App extends Component {
                 this.showActivitiesPage();
               }}
             >
-              <Button.Content visible>My Activities</Button.Content>
+              <Button.Content visible>Activities</Button.Content>
               <Button.Content hidden>
                 <Icon name="arrow circle down" color="black" />
               </Button.Content>
@@ -125,7 +162,6 @@ class App extends Component {
         <div className="category">
           {category}
         </div>
-        <Social />
       </div>
     );
   }

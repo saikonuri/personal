@@ -1,43 +1,53 @@
 import React, { Component } from "react";
 import { Animated } from "react-animated-css";
 import HoosActive from "./Hoosactive.js";
-import Stadium from "./Stadium.js";
+import Alexa from "./Alexa.js";
+import Contra from "./Contra.js";
 import { Container, Header, Button, Icon } from "semantic-ui-react";
 
 export default class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hoos: true
+      hoos: true,
+      alexa: false,
+      contra: false
     };
   }
 
   showHoos(e) {
-    if (!this.state.hoos) {
-      this.setState({
-        hoos: true
-      });
-    }
+    this.setState({
+      hoos: true,
+      alexa: false,
+      contra: false
+    });
   }
 
   showAlexa(e) {
-    if (this.state.hoos) {
-      this.setState({
-        hoos: false
-      });
-    }
+    this.setState({
+      hoos: false,
+      alexa: true,
+      contra: false
+    });
   }
 
-  showAlexa(e){
-      console.log("Clicked For Alexa")
+  showContra(e) {
+    this.setState({
+      hoos: false,
+      alexa: false,
+      contra: true
+    });
   }
 
   render() {
     var current = "";
     if (this.state.hoos) {
       current = <HoosActive />;
-    } else {
-      current = <Stadium />;
+    } else if (this.state.alexa) {
+      current = <Alexa />;
+    }
+    else {
+      current = <Contra />
     }
     return (
       <div>
@@ -48,6 +58,7 @@ export default class Projects extends React.Component {
         >
           <h1 className="category-title">My Projects</h1>
         </Animated>
+        <br />
         <div className="toggle-projects">
           <div className="toggle-hoos">
             <Button
