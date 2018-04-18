@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import prof from "./assets/rsz_prof.png";
+import prof from "./assets/link.png";
 // import { Button, Icon, Rating } from "semantic-ui-react";
 import { Button, Icon } from "semantic-ui-react";
 import Social from "./Social.js";
@@ -11,9 +11,6 @@ import Projects from "./Projects.js";
 import Activities from "./Activities.js";
 import Resume from "./Resume.js"
 import * as firebase from "firebase";
-import { config } from "./keys.js";
-
-firebase.initializeApp(config);
 
 class App extends Component {
   constructor(props) {

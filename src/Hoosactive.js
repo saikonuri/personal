@@ -13,20 +13,12 @@ export default class HoosActive extends React.Component {
       <div>
         <div className="activities-content">
           <div className="media">
-            <Animated
-              animationIn="bounceInLeft"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
+            
               <img src={hoos} alt={"logo"} width={450} height={215} />
-            </Animated>
+            
           </div>
           <div className="description-activities">
-            <Animated
-              animationIn="bounceInUp"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
+           
               <h2 id="activity-title"> HoosActive </h2>
               <Container text>
                 <p id="desc">
@@ -48,7 +40,7 @@ export default class HoosActive extends React.Component {
                   </a>
                 </p>
               </Container>
-            </Animated>
+           
           </div>
         </div>
       </div>

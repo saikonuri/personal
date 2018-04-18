@@ -21,24 +21,13 @@ export default class Singing extends React.Component {
       <div>
         <div className="activities-content">
           <div className="media">
-            <Animated
-              animationIn="bounceInLeft"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
               <ReactPlayer
                 url="https://www.facebook.com/sai.konuri/videos/1118071598336427/"
                 controls
                 facebook
               />
-            </Animated>
           </div>
           <div className="description-activities">
-            <Animated
-              animationIn="bounceInUp"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
               <h2 id="activity-title"> Music </h2>
               <Container text>
                 <p id="sing-desc">
@@ -47,7 +36,6 @@ export default class Singing extends React.Component {
                   <i style={hans}>-Hans Christian Andersen</i>
                 </p>
               </Container>
-            </Animated>
           </div>
         </div>
       </div>

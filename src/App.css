@@ -17,8 +17,9 @@
   justify-content: center;
 }
 .profile-pic {
-  border-radius: 90%;
-  margin-left: 10%;
+  width: 400px;
+  border-radius: 80%;
+  margin: 20px;
 }
 
 .name-position {
@@ -47,17 +48,10 @@
 }
 
 .background-gradient {
-  background: #606c88; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #3f4c6b,
-    #606c88
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #3f4c6b,
-    #606c88
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000);
+
 }
 
 #video-background {

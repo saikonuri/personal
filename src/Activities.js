@@ -53,13 +53,9 @@ export default class Activities extends React.Component {
     }
     return (
       <div>
-        <Animated
-          animationIn="bounceInLeft"
-          animationOut="fadeOut"
-          isVisible={true}
-        >
+        
           <h1 className="category-title">My Activities</h1>
-        </Animated>
+        
         <div className="toggle">
           <div className="toggle-back">
             <Button

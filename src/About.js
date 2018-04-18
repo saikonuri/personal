@@ -11,21 +11,11 @@ export default class About extends React.Component {
   render() {
     return (
       <div>
-        <Animated
-          animationIn="bounceInLeft"
-          animationOut="fadeOut"
-          isVisible={true}
-        >
           <h1 className="category-title">About Me</h1>
-        </Animated>
         <br />
         <div className="about-content">
           <div className="description-activities">
-            <Animated
-              animationIn="bounceInUp"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
+            
               <div id="about-me">
                 <Container text textAlign={"center"}>
                   <p>
@@ -54,7 +44,7 @@ export default class About extends React.Component {
                   </p>
                 </Container>
               </div>
-            </Animated>
+            
           </div>
         </div>
       </div>

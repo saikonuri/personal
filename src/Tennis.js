@@ -18,20 +18,12 @@ export default class Tennis extends React.Component {
       <div>
         <div className="activities-content">
           <div className="media">
-            <Animated
-              animationIn="bounceInLeft"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
+            
               <img src={tennis} alt={"logo"} width={650} height={375} />
-            </Animated>
+            
           </div>
           <div className="description-activities">
-            <Animated
-              animationIn="bounceInUp"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
+            
               <h2 id="activity-title"> Tennis </h2>
               <Container text>
                 <p id="desc" style={tenn}>
@@ -47,7 +39,7 @@ export default class Tennis extends React.Component {
                   US Army Reserve National Scholar Athlete Award Nominee
                 </p>
               </Container>
-            </Animated>
+            
           </div>
         </div>
       </div>

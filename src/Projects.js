@@ -51,13 +51,7 @@ export default class Projects extends React.Component {
     }
     return (
       <div>
-        <Animated
-          animationIn="bounceInLeft"
-          animationOut="fadeOut"
-          isVisible={true}
-        >
           <h1 className="category-title">My Projects</h1>
-        </Animated>
         <br />
         <div className="toggle-projects">
           <div className="toggle-hoos">
