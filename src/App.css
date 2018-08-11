@@ -4,65 +4,43 @@
   flex-direction: column;
 }
 
-.buttons {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .social {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 .profile-pic {
-  width: 400px;
-  border-radius: 80%;
-  margin: 20px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 3%;
 }
 
 .name-position {
-  margin-top: 10%;
-  width: 75%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
   color: whitesmoke;
 }
 
 #name {
   font-family: "Patua One", cursive;
   font-size: 60px;
+  color: #232D4B;
 }
 #position {
   font-family: "Orbitron", sans-serif;
   font-size: 30px;
-  color: cyan;
+  color: #E57200;
 }
 .nametext {
   margin-top: 50%;
 }
 
-.pic-name {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
 .background-gradient {
-  background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #434343, #000000);
+  background: white;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #434343, #000000); */
 
-}
-
-#video-background {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
 }
 
 .category {
@@ -73,7 +51,7 @@ background: linear-gradient(to right, #434343, #000000);
 .category-title {
   font-family: "Patua One", cursive;
   font-size: 35px;
-  color: #cfdfe4;
+  color:#232D4B;
   margin: auto;
 }
 

@@ -1,12 +1,10 @@
-import React, { Component } from "react";
-import { Animated } from "react-animated-css";
-import { Container, Header, Button, Icon } from "semantic-ui-react";
-import resume from "./assets/Resume_Sai.pdf";
+import React from "react";
+import resume from "./assets/Resume.pdf";
 
 export default class Resume extends React.Component {
     constructor(props) {
         super(props);
-    }
+    };
 
     render() {
         return (
