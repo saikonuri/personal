@@ -15,7 +15,7 @@ export default class Alexa extends React.Component {
         <div>
           <Container text>
             <p id="desc">
-              • Developing an Alexa Skill using the Alexa SDK and Node.js
+              • Developed an Alexa Skill using the Alexa SDK and Python (AWS Lambda function)
                   <br />
               <br />
               • Hoping to help students get motivated by offering daily inspirational quotes and speeches
