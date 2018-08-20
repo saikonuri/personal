@@ -45,7 +45,6 @@
 
 .category {
   margin-top: 5%;
-  height: 500px;
 }
 
 .category-title {
@@ -55,12 +54,27 @@
   margin: auto;
 }
 
+.project-title {
+  font-family: "Patua One", cursive;
+  font-size: 25px;
+  color: #E57200;
+  margin: auto;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project {
+  margin-top: 5%;
+}
+
 .activities-content {
-  margin-bottom: 5%;
-  margin-top: 2%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .description-activities {
@@ -71,6 +85,7 @@
 #desc {
   margin-top: 5%;
   width: 400px;
+  color: #232D4B;
 }
 
 #sing-desc {
@@ -87,31 +102,16 @@
   margin-left: 5%;
 }
 
-.toggle-hoos {
-  margin: auto;
-}
-
-.toggle-stadium {
-  margin: auto;
-}
-
-.toggle-contra{
-  margin: auto;
-}
-
-.media {
-  margin-top: 3%;
-  margin-left: 5%;
-}
-
 #activity-title {
   margin-right: 50%;
-  color: cyan;
+  color: #E57200;
 }
 
 .activity {
   display: flex;
   flex-direction: column;
+  margin-top: 4%;
+  margin-left: 5%;
 }
 
 .toggle {
@@ -121,15 +121,9 @@
   width: 80%;
 }
 
-.toggle-projects {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  justify-content: space-around;
-}
-
 #about-desc {
   margin: auto;
+  color: black;
 }
 
 #space {
@@ -137,5 +131,16 @@
 }
 
 #future {
-  color: orange;
+  color: rgb(66, 65, 65);
+}
+
+.resume-background {
+  background: #f6e6b4; /* Old browsers */
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 30%;
+}
+
+.activities-background {
+  margin: 10%;
 }

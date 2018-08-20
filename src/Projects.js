@@ -8,84 +8,28 @@ import { Container, Header, Button, Icon } from "semantic-ui-react";
 export default class Projects extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      hoos: true,
-      alexa: false,
-      contra: false
-    };
-  }
-
-  showHoos(e) {
-    this.setState({
-      hoos: true,
-      alexa: false,
-      contra: false
-    });
-  }
-
-  showAlexa(e) {
-    this.setState({
-      hoos: false,
-      alexa: true,
-      contra: false
-    });
-  }
-
-  showContra(e) {
-    this.setState({
-      hoos: false,
-      alexa: false,
-      contra: true
-    });
   }
 
   render() {
-    var current = "";
-    if (this.state.hoos) {
-      current = <HoosActive />;
-    } else if (this.state.alexa) {
-      current = <Alexa />;
-    }
-    else {
-      current = <Contra />
-    }
     return (
-      <div>
-          <h1 className="category-title">My Projects</h1>
+      <div className="projects-background">
         <br />
-        <div className="toggle-projects">
-          <div className="toggle-hoos">
-            <Button
-              icon
-              inverted
-              color="orange"
-              onClick={e => this.showHoos(e)}
-            >
-              HoosActive
-            </Button>
+        <h1 className="category-title">My Projects</h1>
+        <br />
+        <div className="projects">
+          <div className="project">
+            <h2 className="project-title">HoosActive</h2>
+            <HoosActive />
           </div>
-          <div className="toggle-stadium">
-            <Button
-              icon
-              inverted
-              color="orange"
-              onClick={e => this.showAlexa(e)}
-            >
-              MotivateMe
-            </Button>
+          <div className="project">
+            <h2 className="project-title">MotivateMe</h2>
+            <Alexa />
           </div>
-          <div className="toggle-contra">
-            <Button
-              icon
-              inverted
-              color="orange"
-              onClick={e => this.showContra(e)}
-            >
-              ContraPortal
-            </Button>
+          <div className="project">
+            <h2 className="project-title">Contraportal</h2>
+            <Contra />
           </div>
         </div>
-        {current}
       </div>
     );
   }

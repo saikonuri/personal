@@ -2,16 +2,20 @@
   "name": "me",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://saikonuri.github.io/personal/",
   "dependencies": {
     "animate.css": "^3.5.2",
     "bulma": "^0.6.1",
     "firebase": "^4.5.0",
+    "gh-pages": "^1.2.0",
     "material-ui": "^0.19.4",
     "react": "^15.6.1",
     "react-animated-css": "^1.0.2",
     "react-dom": "^15.6.1",
     "react-player": "^0.25.0",
     "react-scripts": "1.0.9",
+    "react-slick": "^0.23.1",
+    "react-slidez": "0.0.28",
     "react-social": "^1.9.0",
     "react-social-icons": "^2.7.0",
     "reactbulma": "^1.1.1",
@@ -22,6 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }

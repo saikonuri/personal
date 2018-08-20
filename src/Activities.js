@@ -52,8 +52,8 @@ export default class Activities extends React.Component {
       current = <Ektaal />;
     }
     return (
-      <div>
-        
+      <div className="activities-background">
+          <br/>
           <h1 className="category-title">My Activities</h1>
         
         <div className="toggle">

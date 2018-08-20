@@ -10,29 +10,22 @@ export default class Contra extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="activities-content">
-          <div className="media">
-              <img src={contra} alt={"logo"} width={500} height={315} />
-          </div>
-          <div className="description-activities">
-            
-              <h2 id="activity-title"> ContraPortal </h2>
-              <Container text>
-                <p id="desc">
-                  • Built the form UI for users interested in applying for a clinical trial in male contraception
+      <div className="activities-content">
+        <img src={contra} alt={"logo"} width={500} height={315} />
+        <div>
+          <Container text>
+            <p id="desc">
+              • Built the form UI for users interested in applying for a clinical trial in male contraception
                   <br />
+              <br />
+              • Designed data visuals such as graphs, maps, charts, etc. using Highcharts.js and d3.js
                   <br />
-                  • Designed data visuals such as graphs, maps, charts, etc. using Highcharts.js and d3.js
-                  <br />
-                  <br />
-                  <a href="https://contraportal-2ec72.firebaseapp.com/">
-                    Form Portal (The Data visual portal is private to Contraline and I cannot give access.)
+              <br />
+              <a href="https://contraportal-2ec72.firebaseapp.com/">
+                Form Portal (The Data visual portal is private to Contraline and I cannot give access.)
                   </a>
-                </p>
-              </Container>
-            
-          </div>
+            </p>
+          </Container>
         </div>
       </div>
     );

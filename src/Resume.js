@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "./assets/Resume.pdf";
+import resume from "./assets/Resume.jpg";
 
 export default class Resume extends React.Component {
     constructor(props) {
@@ -8,9 +8,12 @@ export default class Resume extends React.Component {
 
     render() {
         return (
-            <div>
-                <embed src={resume} type="application/pdf" width="60%" height="550px" />
+            <div className="resume-background">
+            <br/>
+            <h1 className="category-title">Resume</h1>
+                <img src={resume}  height={1000} width={800} style={{margin: 30}}/>
             </div>
         );
     }
 }
+

@@ -10,27 +10,18 @@ export default class Alexa extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="activities-content">
-          <div className="media">
-            
-              <img src={logo} alt={"logo"} width={450} height={215} />
-
-          </div>
-          <div className="description-activities">
-            
-              <h2 id="activity-title"> MotivateMe </h2>
-              <Container text>
-                <p id="desc">
-                  • Developing an Alexa Skill using the Alexa SDK and Node.js
+      <div className="activities-content">
+        <img src={logo} alt={"logo"} width={450} height={215} />
+        <div>
+          <Container text>
+            <p id="desc">
+              • Developing an Alexa Skill using the Alexa SDK and Node.js
                   <br />
+              <br />
+              • Hoping to help students get motivated by offering daily inspirational quotes and speeches
                   <br />
-                  • Hoping to help students get motivated by offering daily inspirational quotes and speeches
-                  <br />
-                </p>
-              </Container>
-            
-          </div>
+            </p>
+          </Container>
         </div>
       </div>
     );

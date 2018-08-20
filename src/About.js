@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Animated } from "react-animated-css";
-import { Container, Header, Button, Icon } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 
 export default class About extends React.Component {
   constructor(props) {
@@ -11,41 +10,30 @@ export default class About extends React.Component {
   render() {
     return (
       <div>
-          <h1 className="category-title">About Me</h1>
+        <br/>
+        <br/>
+        <br/>
+        <h1 className="category-title">About Me</h1>
         <br />
-        <div className="about-content">
-          <div className="description-activities">
-            
-              <div id="about-me">
-                <Container text textAlign={"center"}>
-                  <p>
-                    My name is Sai. As a young and curious software developer, I
-                    am looking for internship opportunities to showcase my array
-                    of technical skills and contribute to large scale projects.
-                    My skills range from front end development using React to
-                    building REST API with Express.js. My most recent project
-                    included building a full stack web application using the
-                    MERN stack for a realty company that needed a database
-                    management system. As evident, JavaScript is my strongest
-                    language, however, I am proficient in Object Oriented
-                    programming as well. I believe software development is
-                    crucial to a society in which technology is high in demand
-                    and would love to step foot in the realm of exciting
-                    engineering challenges.
-                    <br />
-                    <br />
-                    <p id="future">Future:</p>
-                    The future of software lies in IOT and Artificial
-                    Intelligence. Everyday, I continue to observe this trend and
-                    hope to eventually be a big part of the technological
-                    movement. Rather than building remote communication for
-                    humans, the task at hand is communication between "things"
-                    and I would love to commit my career towards this outlook.
-                  </p>
-                </Container>
-              </div>
-            
-          </div>
+        <div id="about-me">
+          <Container text textAlign={"center"}>
+            <p id="about-desc">
+              Welcome! I am a 3rd year at the University of Virginia studying Computer Science.
+              I am currently looking for software engineering internship opportunities for the summer.
+              My appreciation for this field continues to grow day by day. From learning my 
+              first Hello World program ever only a few years ago to being able to develop 
+              full stack applications now, I haven't ceased to stop learning something new with 
+              every experience. I want to continue to test my boundaries of knowledge and curiosity 
+              and hope that I can be considered as a potential candidate for challenging projects.
+              <br />
+              <br/>
+              I am currently taking online courses in Machine Learning, Artificial Intelligence, and
+              Blockchain development to explore the different fields of Computer Science. I plan on
+              doing personal projects on these topics for the next few years both to make myself well
+              rounded and up to date to the trends of the tech world! To know more about my past experiences,
+              take a look at my resume below!
+              </p>
+          </Container>
         </div>
       </div>
     );
