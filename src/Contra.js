@@ -11,7 +11,7 @@ export default class Contra extends React.Component {
   render() {
     return (
       <div className="activities-content">
-        <img src={contra} alt={"logo"} width={500} height={315} />
+        <img src={contra} alt={"logo"} width={400} height={215} />
         <div>
           <Container text>
             <p id="desc">
