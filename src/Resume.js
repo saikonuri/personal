@@ -9,9 +9,9 @@ export default class Resume extends React.Component {
     render() {
         return (
             <div className="resume-background">
-            <br/>
-            <h1 className="category-title">Resume</h1>
-                <img src={resume}  height={1000} width={800} style={{margin: 30}}/>
+                <br />
+                <h1 className="category-title">Resume</h1>
+                <img src={resume} height={1000} width={800} style={{ margin: 50 }} />
             </div>
         );
     }

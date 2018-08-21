@@ -18,28 +18,28 @@ export default class Tennis extends React.Component {
       <div>
         <div className="activities-content">
           <div className="media">
-            
-              <img src={tennis} alt={"logo"} width={650} height={375} />
-            
+
+            <img src={tennis} alt={"logo"} width={550} height={375} />
+
           </div>
           <div className="description-activities">
-            
-              <h2 id="activity-title"> Tennis </h2>
-              <Container text>
-                <p id="desc" style={tenn}>
-                  State Finalist, Regional Champion
+
+            <h2 id="activity-title"> Tennis </h2>
+            <Container text>
+              <p id="desc" style={tenn}>
+                State Finalist, Regional Champion
                   <br />
+                <br />
+                Top 300 Recruit
                   <br />
-                  Top 300 Recruit
+                <br />
+                Captain of Briar Woods Tennis
                   <br />
-                  <br />
-                  Captain of Briar Woods Tennis
-                  <br />
-                  <br />
-                  US Army Reserve National Scholar Athlete Award Nominee
+                <br />
+                US Army Reserve National Scholar Athlete Award Nominee
                 </p>
-              </Container>
-            
+            </Container>
+
           </div>
         </div>
       </div>

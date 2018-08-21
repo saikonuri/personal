@@ -19,20 +19,20 @@ export default class Ektaal extends React.Component {
       <div>
         <div className="activities-content">
           <div className="media">
-            
-              <img src={ektaal} alt={"logo"} width={650} height={375} />
-            
+
+            <img src={ektaal} alt={"logo"} width={550} height={375} />
+
           </div>
           <div className="description-activities">
-           
-              <h2 id="activity-title"> Ektaal </h2>
-              <Container text>
-                <p id="desc" style={acap}>
-                  UVA's only Bollywood Fusion Acapella Group
+
+            <h2 id="activity-title"> Ektaal </h2>
+            <Container text>
+              <p id="desc" style={acap}>
+                UVA's only Bollywood Fusion Acapella Group
                   <br />
-                </p>
-              </Container>
-            
+              </p>
+            </Container>
+
           </div>
         </div>
       </div>
